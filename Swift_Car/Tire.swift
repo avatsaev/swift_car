@@ -12,7 +12,7 @@ class Tire{
     
 
     //Swift's computed property
-    var pressure: Int {
+    var pressure: Double {
     
     
         //property observer
@@ -35,7 +35,7 @@ class Tire{
     }
 
     //Value representing tires condition from 0 (dead) to 100 (new)
-    var condition: Int{
+    var condition: Double{
 
         didSet{
             

@@ -12,19 +12,19 @@ class Car {
     
     let tires: Tire[] = [Tire(), Tire(), Tire(),Tire()]
     
-    var kilometers: Int = 0
+    var kilometers: Double = 0.0
     
     //Swift's computed property
-    var fuel: Int{
+    var fuel: Double{
     
         //property observer
         //called after the value have been changed
         didSet{
             //Control max and min values
-            if self.fuel > 100{
-                self.fuel = 100
-            }else if self.fuel < 0{
-                self.fuel = 0
+            if self.fuel > 100.0{
+                self.fuel = 100.0
+            }else if self.fuel < 0.0{
+                self.fuel = 0.0
             }
             print(self.showTank)
         }
@@ -50,13 +50,13 @@ class Car {
     }
     
     //adds fuel to tank
-    func addTank (addedfuel: Int){
+    func addTank (addedfuel: Double){
         self.fuel += addedfuel
     }
     
     
     //removes fuel from tank
-    func substractTank (substractedfuel: Int){
+    func substractTank (substractedfuel: Double){
         self.fuel -= substractedfuel
     }
     
@@ -69,7 +69,7 @@ class Car {
     
     
     //travel reduces fuel, adds kilometers to the counter, and makes tires less and less usable depending on the amount of kimoteres traveled
-    func travel(kilometers: Int){
+    func travel(kilometers: Double){
         print ("\nTraveling...\n")
         
         if (self.fuel<=0) {
