@@ -36,7 +36,7 @@ class Car {
     
     // read only coputed property showing general state of the tank
     var showTank: String{
-        return "\nTank is now at \(fuel) litters\nRoad so far: \(kilometers)km\n"
+        return "\nTank is now at \(fuel) liters\nRoad so far: \(kilometers)km\n"
     }
     
     
@@ -74,7 +74,7 @@ class Car {
         
         if (self.fuel<=0) {
             
-            print("\nWARINIG, CAN'T TRAVEL: There is no more fuel in the tank.\n"); //show waring for the fuel
+            print("\nWARINIG, CAN'T TRAVEL: There is no more fuel in the tank.\n"); //show warning for the fuel
         }else{
             self.kilometers += kilometers
             self.substractTank(kilometers/4)
