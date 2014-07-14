@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A3E2C3AB1973FD9C00E6CE3E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2C3AA1973FD9C00E6CE3E /* main.swift */; };
+		A3E2C3B21973FE1600E6CE3E /* Tire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2C3B11973FE1600E6CE3E /* Tire.swift */; };
+		A3E2C3B41974050B00E6CE3E /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2C3B31974050B00E6CE3E /* Car.swift */; };
+		A3E2C3B6197416BA00E6CE3E /* PitStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E2C3B5197416BA00E6CE3E /* PitStop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		A3E2C3A71973FD9C00E6CE3E /* Swift_Car */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Swift_Car; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3E2C3AA1973FD9C00E6CE3E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A3E2C3B11973FE1600E6CE3E /* Tire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tire.swift; sourceTree = "<group>"; };
+		A3E2C3B31974050B00E6CE3E /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		A3E2C3B5197416BA00E6CE3E /* PitStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitStop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				A3E2C3AA1973FD9C00E6CE3E /* main.swift */,
+				A3E2C3B11973FE1600E6CE3E /* Tire.swift */,
+				A3E2C3B31974050B00E6CE3E /* Car.swift */,
+				A3E2C3B5197416BA00E6CE3E /* PitStop.swift */,
 			);
 			path = Swift_Car;
 			sourceTree = "<group>";
@@ -119,6 +128,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3E2C3AB1973FD9C00E6CE3E /* main.swift in Sources */,
+				A3E2C3B21973FE1600E6CE3E /* Tire.swift in Sources */,
+				A3E2C3B41974050B00E6CE3E /* Car.swift in Sources */,
+				A3E2C3B6197416BA00E6CE3E /* PitStop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

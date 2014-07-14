@@ -8,5 +8,16 @@
 
 import Foundation
 
-println("Hello, World!")
 
+var car = Car()
+
+
+for i in 1..6{
+    car.travel(40)
+}
+
+PitStop.renew(car)
+
+for i in 1..3{
+    car.travel(100)
+}
