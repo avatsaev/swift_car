@@ -17,7 +17,8 @@ class Car {
     //Swift's computed property
     var fuel: Int{
     
-    
+        //property observer
+        //called after the value have been changed
         didSet{
             //Control max and min values
             if self.fuel > 100{

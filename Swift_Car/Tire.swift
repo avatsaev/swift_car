@@ -16,7 +16,7 @@ class Tire{
     
     
         //property observer
-        //called after 'pressure' value have changed
+        //called after 'pressure' value have been changed
         didSet{
             //controlling values (no negative, max value is 25)
             if self.pressure < 0{
