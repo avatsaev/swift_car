@@ -11,7 +11,7 @@ import Cocoa
 class PitStop {
     
     
-    //using a 
+    //using a static method to renew a car
     class func renew(car: Car){
         print("\n----------ENTER Pit Stop-----------\n")
         
