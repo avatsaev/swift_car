@@ -33,6 +33,7 @@ class Car {
     
     var color = "Red"
     
+    // read only coputed property showing general state of the tank
     var showTank: String{
         return "\nTank is now at \(fuel) litters\nRoad so far: \(kilometers)km\n"
     }

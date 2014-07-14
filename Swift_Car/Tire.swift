@@ -34,7 +34,7 @@ class Tire{
     
     }
 
-
+    //Value representing tires condition from 0 (dead) to 100 (new)
     var condition: Int{
 
         didSet{
