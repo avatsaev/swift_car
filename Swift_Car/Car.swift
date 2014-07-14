@@ -10,63 +10,82 @@ import Cocoa
 
 class Car {
     
-    var tires: Tire[] = [Tire(), Tire(), Tire(),Tire()]
+    let tires: Tire[] = [Tire(), Tire(), Tire(),Tire()]
+    
     var kilometers: Int = 0
-    var essence: Int{
+    
+    //Swift's computed property
+    var fuel: Int{
+    
+    
         didSet{
-            if self.essence > 100{
-                self.essence = 100
-            }else if self.essence < 0{
-                self.essence = 0
+            //Control max and min values
+            if self.fuel > 100{
+                self.fuel = 100
+            }else if self.fuel < 0{
+                self.fuel = 0
             }
             print(self.showTank)
         }
+    
     }
+    
+    
     var color = "Red"
     
     var showTank: String{
-        return "\nTank is now at \(essence) litters\nRoad so far: \(kilometers)km\n"
+        return "\nTank is now at \(fuel) litters\nRoad so far: \(kilometers)km\n"
     }
     
     
     init(){
-        self.essence = 100
+        self.fuel = 100
     }
     
+    //makes the tank full
     func fullTank(){
-        self.essence = 100
+        self.fuel = 100
     }
     
-    func addTank (addedEssence: Int){
-        self.essence += addedEssence
-    }
-    
-    func substractTank (substractedEssence: Int){
-        self.essence -= substractedEssence
+    //adds fuel to tank
+    func addTank (addedfuel: Int){
+        self.fuel += addedfuel
     }
     
     
+    //removes fuel from tank
+    func substractTank (substractedfuel: Int){
+        self.fuel -= substractedfuel
+    }
+    
+    //shows general condition of all tires
     func showTires(){
         for (index,tire) in enumerate(self.tires){
             print("-Tire No\(index+1):\n \(tire.showState)\n")
         }
     }
     
+    
+    //travel reduces fuel, adds kilometers to the counter, and makes tires less and less usable depending on the amount of kimoteres traveled
     func travel(kilometers: Int){
+        print ("\nTraveling...\n")
         
-        if (self.essence<=0) {
-            print("\nWARINIG: There is no more fuel in the tank.\n"); //show waring for the fuel
+        if (self.fuel<=0) {
+            
+            print("\nWARINIG, CANT'T TRAVEL: There is no more fuel in the tank.\n"); //show waring for the fuel
         }else{
             self.kilometers += kilometers
             self.substractTank(kilometers/4)
             
             for tire in self.tires{
-   
-                tire.condition = tire.condition - self.kilometers/4;
-                tire.pressure = tire.pressure - self.kilometers/16;
+                
+                tire.condition = tire.condition - kilometers/4;
+                tire.pressure = tire.pressure - kilometers/16;
                 
                 
             }//for loop
+            
+            self.showTires()
             
         }//else
         

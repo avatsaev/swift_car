@@ -18,15 +18,16 @@ class Tire{
         //property observer
         //called after 'pressure' value have changed
         didSet{
+            //controlling values (no negative, max value is 25)
             if self.pressure < 0{
                 self.pressure = 0
             }else if self.pressure > 25{
                 self.pressure = 25
             }
             
+            //Show warning for low pressure
             if (self.pressure < 5){
-                //show which tire is dead
-                print("\nWARINIG: Tire is no longer usable! \nPressure: \(self.pressure)\n")
+                //print("\nWARINIG: Tire is no longer usable! \nPressure: \(self.pressure)\n")
                 
             }
         }
@@ -35,8 +36,7 @@ class Tire{
 
 
     var condition: Int{
-    
-    
+
         didSet{
             
             if self.condition<0{
@@ -45,6 +45,7 @@ class Tire{
                 self.condition = 100
             }
             
+            //Update human readable condition state
             switch self.condition{
                 case 100:
                     conditionState = "New"
@@ -60,10 +61,9 @@ class Tire{
                     conditionState = "No tires"
             }
             
-            if (self.condition < 10 || self.pressure < 5){
-                //show which tire is dead
-                print("\nWARINIG: Tire is no longer usable! \nCondition:\(self.conditionState)\n")
-                
+        
+            if (self.condition < 10 ){
+                //print("\nWARINIG: Tire is no longer usable! \nCondition:\(self.conditionState)\n")
             }
         }
     
@@ -71,6 +71,7 @@ class Tire{
     
     var conditionState: String = "New"
     
+    // read only coputed property showing general state of the tire
     var showState : String {
         return "\nPressure: \(pressure)\nCondition: \(conditionState) (\(condition))\n"
     }

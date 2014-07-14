@@ -11,13 +11,15 @@ import Foundation
 
 var car = Car()
 
-
+//use all fuel and kill tires
 for i in 1..6{
-    car.travel(40)
+    car.travel(100)
 }
 
+//renew everything at pitstop
 PitStop.renew(car)
 
-for i in 1..3{
+//travel a little
+for i in 1..2{
     car.travel(100)
 }

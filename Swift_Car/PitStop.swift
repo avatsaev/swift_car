@@ -10,16 +10,23 @@ import Cocoa
 
 class PitStop {
     
+    
+    //using a 
     class func renew(car: Car){
         print("\n----------ENTER Pit Stop-----------\n")
         
-        print("\n...Changing tires")
+        print("\n...Changing tires...")
         for tire in car.tires{
             tire.renew()
-            print(tire.showState)
+            
         }
-        print("\n...Refueling")
-        car.essence = 100
+        print("\n...DONE\n")
+        print("\n...Checking tires...\n")
+        car.showTires()
+        print("\n...Refueling\n")
+        car.fuel = 100
+        
+        print("\n----------EXIT Pit Stop-----------\n")
         
 
         
