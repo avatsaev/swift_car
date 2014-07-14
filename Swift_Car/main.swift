@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Aslan Vatsaev. All rights reserved.
 //
 
-import Foundation
+
 
 
 var car = Car()

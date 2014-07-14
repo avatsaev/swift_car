@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Aslan Vatsaev. All rights reserved.
 //
 
-import Cocoa
 
 class PitStop {
     

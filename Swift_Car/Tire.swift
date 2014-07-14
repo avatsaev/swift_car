@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Aslan Vatsaev. All rights reserved.
 //
 
-import Cocoa
+
 
 class Tire{
     
@@ -39,9 +39,9 @@ class Tire{
 
         didSet{
             
-            if self.condition<0{
+            if self.condition < 0{
                 self.condition = 0
-            }else if self.condition>100{
+            }else if self.condition > 100{
                 self.condition = 100
             }
             
@@ -55,7 +55,7 @@ class Tire{
                     conditionState = "Mediocre"
                 case 10..50:
                     conditionState = "Bad"
-                case 0...10:
+                case 0..10:
                     conditionState = "Dead"
                 default:
                     conditionState = "No tires"

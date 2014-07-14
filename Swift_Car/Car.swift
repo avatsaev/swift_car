@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Aslan Vatsaev. All rights reserved.
 //
 
-import Cocoa
+
 
 class Car {
     
@@ -74,7 +74,7 @@ class Car {
         
         if (self.fuel<=0) {
             
-            print("\nWARINIG, CANT'T TRAVEL: There is no more fuel in the tank.\n"); //show waring for the fuel
+            print("\nWARINIG, CAN'T TRAVEL: There is no more fuel in the tank.\n"); //show waring for the fuel
         }else{
             self.kilometers += kilometers
             self.substractTank(kilometers/4)
