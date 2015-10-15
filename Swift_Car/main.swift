@@ -12,7 +12,7 @@
 var car = Car()
 
 //use all fuel and kill tires
-for i in 1..6{
+for i in 1..<6{
     car.travel(100)
 }
 
@@ -20,6 +20,6 @@ for i in 1..6{
 PitStop.renew(car)
 
 //travel a little
-for i in 1..2{
+for i in 1..<2{
     car.travel(100)
 }

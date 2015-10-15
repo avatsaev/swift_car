@@ -97,6 +97,8 @@
 		A3E2C39F1973FD9C00E6CE3E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Aslan Vatsaev";
 				TargetAttributes = {
@@ -245,6 +247,7 @@
 				A3E2C3B01973FD9C00E6CE3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

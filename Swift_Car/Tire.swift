@@ -49,13 +49,13 @@ class Tire{
             switch self.condition{
                 case 100:
                     conditionState = "New"
-                case 75..100:
+                case 75..<100:
                     conditionState = "Good"
-                case 50..75:
+                case 50..<75:
                     conditionState = "Mediocre"
-                case 10..50:
+                case 10..<50:
                     conditionState = "Bad"
-                case 0..10:
+                case 0..<10:
                     conditionState = "Dead"
                 default:
                     conditionState = "No tires"

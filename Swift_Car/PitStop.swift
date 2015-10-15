@@ -12,20 +12,20 @@ class PitStop {
     
     //using a static method to renew a car
     class func renew(car: Car){
-        print("\n----------ENTER Pit Stop-----------\n")
+        print("\n----------ENTER Pit Stop-----------\n", terminator: "")
         
-        print("\n...Changing tires...")
+        print("\n...Changing tires...", terminator: "")
         for tire in car.tires{
             tire.renew()
             
         }
-        print("\n...DONE\n")
-        print("\n...Checking tires...\n")
+        print("\n...DONE\n", terminator: "")
+        print("\n...Checking tires...\n", terminator: "")
         car.showTires()
-        print("\n...Refueling\n")
+        print("\n...Refueling\n", terminator: "")
         car.fuel = 100
         
-        print("\n----------EXIT Pit Stop-----------\n")
+        print("\n----------EXIT Pit Stop-----------\n", terminator: "")
         
 
         

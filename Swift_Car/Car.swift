@@ -10,7 +10,7 @@
 
 class Car {
     
-    let tires: Tire[] = [Tire(), Tire(), Tire(),Tire()]
+    let tires: [Tire] = [Tire(), Tire(), Tire(),Tire()]
     
     var kilometers: Double = 0.0
     
@@ -26,7 +26,7 @@ class Car {
             }else if self.fuel < 0.0{
                 self.fuel = 0.0
             }
-            print(self.showTank)
+            print(self.showTank, terminator: "")
         }
     
     }
@@ -62,19 +62,19 @@ class Car {
     
     //shows general condition of all tires
     func showTires(){
-        for (index,tire) in enumerate(self.tires){
-            print("-Tire No\(index+1):\n \(tire.showState)\n")
+        for (index,tire) in self.tires.enumerate(){
+            print("-Tire No\(index+1):\n \(tire.showState)\n", terminator: "")
         }
     }
     
     
     //travel reduces fuel, adds kilometers to the counter, and makes tires less and less usable depending on the amount of kimoteres traveled
     func travel(kilometers: Double){
-        print ("\nTraveling...\n")
+        print ("\nTraveling...\n", terminator: "")
         
         if (self.fuel<=0) {
             
-            print("\nWARINIG, CAN'T TRAVEL: There is no more fuel in the tank.\n"); //show warning for the fuel
+            print("\nWARINIG, CAN'T TRAVEL: There is no more fuel in the tank.\n", terminator: ""); //show warning for the fuel
         }else{
             self.kilometers += kilometers
             self.substractTank(kilometers/4)
